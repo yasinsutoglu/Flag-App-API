@@ -23,6 +23,7 @@ fetchAllCountries()
 const loadCountriesToSelect = (countries)=>{
 
     if(isError){
+         formSelect.style.display += "none";
         document.querySelector("body").innerHTML = ` <h2>Countries cannot be fetched</h2>
                                 <img src="./img/404.png" alt="">`;
     return;
